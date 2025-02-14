@@ -1,0 +1,96 @@
+body {
+    font-family: Playfair Display; /* Choose a nice font */
+    background-color: #C3B1E1; /* Light pink background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Make sure the content is centered vertically */
+    margin: 0; /* Remove default margins */
+}
+
+.container {
+    background-color: white;
+    width: 900px; /* Adjust width as needed */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    text-align: center;
+    .image-gallery {
+        display: grid; /* Use CSS Grid */
+        grid-template-columns: repeat(3, 1fr); /* 3 columns, equal width */
+        gap: 2px; /* Spacing between grid items */
+    }
+    font-family: 'Open Sans', sans-serif;
+    
+    .image-gallery img {
+        max-width: 100%; /* Image takes full width of its grid cell */
+        height: auto;
+        border-radius: 10px;
+        display: block; /* Prevents small vertical alignment issues */
+        margin: 0 auto; /* Center the image in the grid cell */
+    }
+    
+    /* Optional: If you want to control the aspect ratio of the grid cells */
+    .image-gallery {
+      grid-template-rows: repeat(auto-fit, minmax(200px, 1fr)); /* Example: min height 200px */
+    }
+    
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    color: #e91e63; /* Pink heading */
+}
+
+img {
+    max-width: 300px; /* Adjust image size as needed */
+    height: auto;
+    display: block; /* Make the image a block element */
+    margin: 20px auto; /* Center the image */
+    border-radius: 10px;
+}
+
+button {
+    background-color: #e91e63; /* Pink button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px; /* Space between buttons */
+}
+#noButton {
+    position: absolute;
+    /* other styles */
+}
+
+/* Styles specifically for yes.html */
+.container {
+    text-align: center;
+}
+
+.container img {
+    max-width: 400px; /* Adjust GIF size */
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Center the GIF */
+}
+
+.container p {
+    font-size: 1.2em; /* Increase font size */
+    margin-bottom: 20px;
+}
+
+.container a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e91e63; /* Pink button */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
